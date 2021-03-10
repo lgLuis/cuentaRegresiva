@@ -30,14 +30,27 @@ body{
     margin-top: 10px;
 }
 
-.main{
+.contenedor{
     display: grid;
-    grid-template-columns:  repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: white;
+    width: 50%;
+    margin: 25px auto;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.main>div{
+.contenedor >h3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+
+}
+.cabecera-numero{
     display: block;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    border: 1px solid rebeccapurple;
+    grid-column: 3/4;
+    grid-row: 4/5;
+    text-align: center;
+
+
 }
